@@ -1,0 +1,87 @@
+.suckertreemenu ul{
+margin: 0;
+padding: 0;
+list-style-type: none;
+font-family:Arial, Helvetica, sans-serif;
+font-size:12px; z-index:2;}
+
+/*Top level list items*/
+.suckertreemenu ul li{
+position: relative;
+display: inline;
+float: left;
+}
+
+/*Top level menu link items style*/
+.suckertreemenu ul li a{
+display: block;
+border-left:1px solid #581A50;
+font-weight:bold;
+padding: 9px 15px;
+text-decoration: none;
+color:#FFF;
+background:url(../images/line-menu.gif) no-repeat top right;
+}
+
+/*1st sub level menu*/
+.suckertreemenu ul li ul{
+left: 0;
+position: absolute;
+display: block;
+visibility: hidden;
+}
+
+/*Sub level menu list items (undo style from Top level List Items)*/
+.suckertreemenu ul li ul li{
+display: list-item;
+float: none;
+}
+
+/*All subsequent sub menu levels offset after 1st level sub menu */
+.suckertreemenu ul li ul li ul{ 
+top:0;
+border-style:none;
+margin:0px;
+}
+
+/* Sub level menu links style */
+.suckertreemenu ul li ul li a{
+display: block;
+width: 120px; /*width of sub menu levels*/
+text-decoration: none;
+padding: 9px 15px;
+background:#490141;
+border-bottom:1px solid #581A50;
+border-right:none;
+text-align:left;
+border-left:1px solid #581A50;
+border-right:1px solid #581A50;
+}
+
+
+.suckertreemenu ul li a:hover{
+color:#000000;
+font-weight:bold;
+text-decoration:none;
+background-image:url(../images/bg-menu-hover.jpg);
+background-position:center;
+background-repeat:repeat;
+
+}
+
+
+.suckertreemenu ul li ul li a:hover{
+color:#000;
+font-weight:bold;
+text-decoration:none;
+background-image:url(../images/bg-menu-hover.jpg);
+background-position:center;
+
+}
+
+* html p#iepara{}
+	
+/* Holly Hack for IE \*/
+* html .suckertreemenu ul li { float: left; height: 1%; }
+* html .suckertreemenu ul li a { height: 1%; }
+/* End */

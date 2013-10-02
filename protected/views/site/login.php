@@ -1,0 +1,83 @@
+<?php
+/* @var $this SiteController */
+/* @var $model LoginForm */
+/* @var $form CActiveForm  */
+
+$this->pageTitle=Yii::app()->name . ' - Login';
+$this->breadcrumbs=array(
+	'Login',
+);
+?>
+
+<h1>Login</h1>
+
+<div class="form" style="width:400px; margin:0px auto;">
+<?php $form=$this->beginWidget('CActiveForm', array(
+	'id'=>'login-form',
+	'enableAjaxValidation'=>true,
+	'clientOptions'=>array(
+		'validateOnSubmit'=>true,
+	),
+	'htmlOptions' => array("class"=>"form-horizontal"),
+)); ?>
+
+
+  <?php echo $form->errorSummary($model); ?>
+  <?php echo Yii::app()->user->getFlash('contact'); ?>
+
+
+    <div class="control-group">
+      <?php echo $form->labelEx($model,'username', array("class" => "control-label")); ?>
+      <div class="controls">
+		<?php echo $form->textField($model,'username'); ?>
+		<?php echo $form->error($model,'username'); ?>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <?php echo $form->labelEx($model,'password', array("class" => "control-label")); ?>
+      <div class="controls">
+    <?php echo $form->passwordField($model,'password'); ?>
+    <?php echo $form->error($model,'password'); ?>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <?php echo $form->labelEx($model,'hak_akses', array("class" => "control-label")); ?>
+      <div class="controls">
+        <select name="LoginForm[hak_akses]" id="hak_akses">
+            <option value="">--- Pilih Hak Akses ---</option>
+            <option value="admin_bidang">Admin Bidang</option>
+            <option value="web_admin">Web Admin</option>
+        </select>
+      </div>
+    </div>
+
+    <?php if(CCaptcha::checkRequirements()): ?>
+    <div class="control-group">
+      <?php echo $form->labelEx($model,'verifyCode', array("class" => "control-label")); ?>
+      <div class="controls">
+        <div style="background-color:#fff; width:230px; margin-bottom:5px;">
+        <?php $this->widget('CCaptcha'); ?>
+        </div>
+        <?php echo $form->textField($model,'verifyCode'); ?>
+      </div>
+    </div>
+  <?php endif; ?>
+
+    <div class="control-group">
+		<?php echo $form->label($model,'rememberMe', array("class" => "control-label")); ?>
+      <div class="controls">
+      <?php echo $form->checkBox($model,'rememberMe'); ?>
+		<?php echo $form->error($model,'rememberMe'); ?>
+      </div>
+    </div>
+
+    <div class="control-group">
+      <div class="controls">
+		<?php echo CHtml::submitButton('Log In',array("class" => "btn btn-inverse")); ?>
+      </div>
+    </div>
+
+<?php $this->endWidget(); ?>
+</div><!-- form -->
