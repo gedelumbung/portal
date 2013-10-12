@@ -20,7 +20,15 @@
 			$this->setState('nama', $user->nama);
 			$this->setState('id_bidang', "0");
 			$this->setState('level', $user->level);
-			$this->setState('route_admin', "cms");
+			$this->setState('pengadaan', "0");
+			if($user->level=="admin")
+			{
+				$this->setState('route_admin', "cms_admin");
+			}
+			else if($user->level=="superadmin")
+			{
+				$this->setState('route_admin', "cms_superadmin");
+			}
 			$this->errorCode=self::ERROR_NONE;
 		}
 		return $this->errorCode==self::ERROR_NONE;

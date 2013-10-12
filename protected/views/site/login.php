@@ -14,7 +14,7 @@ $this->breadcrumbs=array(
 <div class="form" style="width:400px; margin:0px auto;">
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'id'=>'login-form',
-	'enableAjaxValidation'=>true,
+	'enableAjaxValidation'=>false,
 	'clientOptions'=>array(
 		'validateOnSubmit'=>true,
 	),
@@ -45,11 +45,7 @@ $this->breadcrumbs=array(
     <div class="control-group">
       <?php echo $form->labelEx($model,'hak_akses', array("class" => "control-label")); ?>
       <div class="controls">
-        <select name="LoginForm[hak_akses]" id="hak_akses">
-            <option value="">--- Pilih Hak Akses ---</option>
-            <option value="admin_bidang">Admin Bidang</option>
-            <option value="web_admin">Web Admin</option>
-        </select>
+        <?php echo $form->dropDownList($model,'hak_akses',array("admin_bidang"=>"Admin Bidang","web_admin"=>"Web Admin","perusahaan"=>"Perusahaan"),array('empty'=>'-- Pilih Hak Akses --')); ?>
       </div>
     </div>
 

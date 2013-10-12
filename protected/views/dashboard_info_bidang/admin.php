@@ -44,6 +44,7 @@ or <b>=</b>) at the beginning of each of your search values to specify how the c
 	'id'=>'info-bidang-grid',
 	'dataProvider'=>$model->search(),
 	'filter'=>$model,
+    'pager' => array('cssFile' => Yii::app()->theme->baseUrl.'/css/gridView.css'),
 	'columns'=>array(
 	     array(
 	      'header'=>'No',

@@ -21,6 +21,7 @@
 			$this->setState('id_bidang', $user->id_bidang);
 			$this->setState('level', "admin_bidang");
 			$this->setState('route_admin', "dashboard");
+			$this->setState('pengadaan', $user->pengadaan);
 			$this->errorCode=self::ERROR_NONE;
 		}
 		return $this->errorCode==self::ERROR_NONE;

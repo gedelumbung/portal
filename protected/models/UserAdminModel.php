@@ -38,8 +38,8 @@ class UserAdminModel extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('nama, username, password, level', 'required'),
-			array('nama, username, password', 'length', 'max'=>100),
+			array('nama, username, level', 'required'),
+			array('nama, username', 'length', 'max'=>100),
 			array('level', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
@@ -122,7 +122,7 @@ class UserAdminModel extends CActiveRecord
 	 * @param int cost parameter for Blowfish hash algorithm
 	 * @return string the salt
 	 */
-	protected function generateSalt($cost=10)
+	public function generateSalt($cost=10)
 	{
 		if(!is_numeric($cost)||$cost<4||$cost>31){
 			throw new CException(Yii::t('Cost parameter must be between 4 and 31.'));

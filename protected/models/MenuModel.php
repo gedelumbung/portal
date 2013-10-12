@@ -39,11 +39,11 @@ class MenuModel extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('menu, url_route, content, jenis', 'required'),
+			array('menu, url_route, content, posisi', 'required'),
 			array('id_parent', 'numerical', 'integerOnly'=>true),
 			array('menu', 'length', 'max'=>50),
 			array('url_route', 'length', 'max'=>100),
-			array('jenis', 'length', 'max'=>20),
+			array('posisi', 'length', 'max'=>20),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
 			array('id_menu, id_parent, menu, url_route, content, jenis', 'safe', 'on'=>'search'),
@@ -55,10 +55,9 @@ class MenuModel extends CActiveRecord
 	 */
 	public function relations()
 	{
-		// NOTE: you may need to adjust the relation name and the related
-		// class name for the relations automatically generated below.
 		return array(
-		);
+			'Menu'=>array(self::BELONGS_TO,'MenuModel','id_parent'),
+			);
 	}
 
 	/**
@@ -72,7 +71,7 @@ class MenuModel extends CActiveRecord
 			'menu' => 'Menu',
 			'url_route' => 'Url Route',
 			'content' => 'Content',
-			'jenis' => 'Jenis',
+			'posisi' => 'posisi',
 		);
 	}
 
@@ -92,7 +91,7 @@ class MenuModel extends CActiveRecord
 		$criteria->compare('menu',$this->menu,true);
 		$criteria->compare('url_route',$this->url_route,true);
 		$criteria->compare('content',$this->content,true);
-		$criteria->compare('jenis',$this->jenis,true);
+		$criteria->compare('posisi',$this->posisi,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

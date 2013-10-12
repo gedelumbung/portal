@@ -94,6 +94,23 @@
 		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_berita">Manajemen Berita</a></li>
 		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_pengumuman">Manajemen Pengumuman</a></li>
 		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_info_bidang">Manajemen Info Bidang</a></li>
+		<?php if(Yii::app()->user->pengadaan==1){?>
+		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_info_pengadaan">Manajemen Info Pengadaan</a></li>
+		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_info_pemenang_pengadaan">Manajemen Info Pemenang Pengadaan</a></li>
+		<?php } ?>
+	</ul>
+</div>
+</div>
+<div id="bottom-sidebar"></div>
+
+<div class="cleaner_h20"></div>
+
+<div id="bg-sidebar">
+<div id="head-sidebar">MANAJEMEN AKUN</div>
+<div id="content-sidebar">
+	<ul>
+		<li><a href="<?php echo Yii::app()->baseUrl; ?>/dashboard_profil">Manajemen Profil</a></li>
+		<li><a href="<?php echo Yii::app()->baseUrl; ?>/site/logout">Log Out</a></li>
 	</ul>
 </div>
 </div>

@@ -38,7 +38,7 @@ class UserBidangModel extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id_bidang, nama, username, password', 'required'),
+			array('id_bidang, nama, username, password, pengadaan', 'required'),
 			array('id_bidang', 'numerical', 'integerOnly'=>true),
 			array('nama, username, password', 'length', 'max'=>100),
 			// The following rule is used by search().
@@ -69,6 +69,7 @@ class UserBidangModel extends CActiveRecord
 			'nama' => 'Nama',
 			'username' => 'Username',
 			'password' => 'Password',
+			'pengadaan' => 'pengadaan',
 		);
 	}
 

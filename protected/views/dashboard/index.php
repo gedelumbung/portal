@@ -1,13 +1,11 @@
-<?php
-/* @var $this DashboardController */
-
-$this->breadcrumbs=array(
-	'Dashboard',
-);
-?>
-<h1><?php echo $this->id . '/' . $this->action->id; ?></h1>
+<h2>Dashboard Admin Bidang</h2>
 
 <p>
-	You may change the content of this page by modifying
-	the file <tt><?php echo __FILE__; ?></tt>.
+	Selamat datang <b><?php echo Yii::app()->user->nama; ?></b>
+</p>
+<p>
+	Hak akses anda sebagai <b><?php echo Yii::app()->user->level; ?></b>
+</p>
+<p>
+	Pada bidang <b><?php echo Yii::app()->user->id_bidang; ?></b>
 </p>
