@@ -4,7 +4,7 @@
 /* @var $form CActiveForm */
 ?>
 
-<div class="wide form">
+<div class="form">
 
 <?php $form=$this->beginWidget('CActiveForm', array(
 	'action'=>Yii::app()->createUrl($this->route),
@@ -13,7 +13,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'judul'); ?>
-		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150,'class'=>'span8')); ?>
 	</div>
 
 	<div class="row buttons">

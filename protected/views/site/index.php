@@ -6,7 +6,7 @@
 <div class="line_dotted"></div>
 <div class="cleaner_h5"></div>
 <img src="<?php echo Yii::app()->theme->baseUrl; ?>/images/logo-sekolah.jpg" style="float:left; padding:3px; border:1px solid #333333; background:#FFFFFF; margin:5px; width:75px;" />
-Kami Menyambut baik terbitnya Website SMAN 9 Pekanbaru yang baru , dengan harapan dipublikasinya website ini sekolah berharap : Peningkatan layanan pendidikan kepada siswa, orangtua, dan masyarakat pada umumnya semakin meningkat. Sebaliknya orangtua dapat mengakses informasi tentang kegiatan akademik dan non akademik putra - puterinya di sekolah ini. Dengan fasilitas ini Siswa dapat mengakses berbagai informasi pembelajaran dan informasi akademik.
+Kami Menyambut baik terbitnya Website Portal Dinas Perhubungan Kota Medan , dengan harapan dipublikasinya website ini sekolah berharap : Peningkatan layanan kepada masyarakat pada umumnya semakin meningkat. 
 </div>
 
 <div class="cleaner_h10"></div>

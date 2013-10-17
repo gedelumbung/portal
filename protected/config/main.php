@@ -91,6 +91,9 @@ return array(
 				*/
 			),
 		),
+		'simpleImage' => array (
+        	'class' => 'ext.SimpleImage.CSimpleImage',
+   		),
 	),
 
 	// application-level parameters that can be accessed

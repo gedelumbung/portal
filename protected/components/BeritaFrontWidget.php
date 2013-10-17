@@ -6,7 +6,7 @@ class BeritaFrontWidget extends CWidget {
 
         $criteria = new CDbCriteria;
         $criteria->order = 'id_berita DESC';
-        $criteria->limit = 5;
+        $criteria->limit = 3;
         $criteria->offset = 0;
 
         $dt = Berita::model()->findAll($criteria);

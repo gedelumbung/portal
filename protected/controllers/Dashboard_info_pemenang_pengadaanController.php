@@ -12,6 +12,10 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 		{
 			$this->redirect(array("site/index"));
 		}
+		else if(Yii::app()->user->level!="admin_bidang")
+		{
+			$this->redirect(array("site/index"));
+		}
 	}
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning

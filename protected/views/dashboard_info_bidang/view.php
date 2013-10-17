@@ -23,10 +23,12 @@ $this->menu=array(
 	'attributes'=>array(
 		'id_info',
 		'judul',
-		'isi',
+		array(
+			'type'=>'raw',
+			'name'=>'isi'
+			),
 		'tanggal',
-		'id_user',
-		'id_bidang',
-		'stts',
+		'UserBidang.nama',
+		'Bidang.nama_bidang',
 	),
 )); ?>

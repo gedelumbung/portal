@@ -13,7 +13,7 @@
 
 	<div class="row">
 		<?php echo $form->label($model,'judul'); ?>
-		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150,'class'=>'span8')); ?>
 	</div>
 
 	<div class="row buttons">

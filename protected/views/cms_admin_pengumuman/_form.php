@@ -17,7 +17,7 @@
 
 	<div class="row">
 		<?php echo $form->labelEx($model,'judul'); ?>
-		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150)); ?>
+		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150,'class'=>'span8')); ?>
 		<?php echo $form->error($model,'judul'); ?>
 	</div>
 	<br>

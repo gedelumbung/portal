@@ -66,11 +66,65 @@
 </div>
 	<div class="cleaner_h10"></div>
 
+<?php if(Yii::app()->controller->id.'/'.Yii::app()->controller->action->id=="site/index"){ ?>
+<div id="banner">
+<div id="left-banner">
+<div id="slider" class="nivoSlider">   
+<?php
+$dt_banner = Banner::model()->findAll();
+$arr = array();
+foreach($dt_banner as $dt_b)
+{
+	array_push($arr,array('image'=>Yii::app()->baseUrl.'/banner/'.$dt_b->gambar,'alt'=>$dt_b->judul));
+}
+$this->widget('ext.coinSlider.CoinSliderWidget', array(
+		    'items' => $arr,
+		    )
+		);
+?>  
+</div>
+</div>
+
+<div id="right-banner">
+<div id="sub-right-banner">
+<div class="cleaner_h5"></div>
+<h1>INFO BIDANG TERKINI</h1>
+<div class="cleaner_h10"></div>
+
+<?php
+	$this->widget('InfoBidangBanner');
+?>
+
+<a href=""><strong>-- Indexs Berita --</strong></a>
+</div>
+</div>
+</div>
+
+</div>
+
+<div class="cleaner_h20"></div>
+<?php } ?>
 
 <div id="content-main">
 
 
 <div id="content-left">
+
+<div id="bg-kepsek">
+<div id="head-sidebar">KEPALA DINAS
+</div>
+<div id="content-kepsek">
+<img src="<?php echo $baseUrl; ?>/images/kepsek.jpg" />
+<div class="cleaner_h0"></div>
+RENWARD PARAPAT, ATD, MT
+<div class="cleaner_h0"></div>
+Kepala Dinas Perhubungan Kota Medan
+<div class="cleaner_h10"></div>
+</div>
+</div>
+<div id="bottom-sidebar"></div>
+
+<div class="cleaner_h20"></div>
 
 <div id="bg-sidebar">
 <div id="head-sidebar">BERITA TERBARU</div>
@@ -122,6 +176,18 @@
 <div id="content-sidebar">
 <?php
 	$this->widget('InfoBidangWidget');
+?>
+</div>
+</div>
+<div id="bottom-sidebar"></div>
+
+<div class="cleaner_h20"></div>
+
+<div id="bg-sidebar">
+<div id="head-sidebar">INFO PENGADAAN</div>
+<div id="content-sidebar">
+<?php
+	$this->widget('InfoPengadaanWidget');
 ?>
 </div>
 </div>

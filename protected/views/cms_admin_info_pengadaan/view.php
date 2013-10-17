@@ -29,7 +29,6 @@ $this->menu=array(
 		'tanggal',
 		'UserBidang.nama',
 		'Bidang.nama_bidang',
-		'stts',
 		'status_pengadaan',
 	),
 )); ?>

@@ -16,7 +16,7 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->textField($model,'judul',array('size'=>90,'maxlength'=>150,'placeholder'=>"Ketikkan judul")); ?>
+		<?php echo $form->textField($model,'judul',array('size'=>90,'maxlength'=>150,'placeholder'=>"Ketikkan judul",'class'=>'span8')); ?>
 		<?php echo $form->error($model,'judul'); ?>
 	</div>
 	<br>

@@ -5,7 +5,10 @@
 <?php $this->widget('zii.widgets.CDetailView', array(
 	'data'=>$model,
 	'attributes'=>array(
-		'isi',
+		array(
+			'type'=>'raw',
+			'name'=>'isi'
+			),
 		'tanggal',
 		'UserBidang.nama',
 		'Bidang.nama_bidang',

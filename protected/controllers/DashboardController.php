@@ -8,6 +8,10 @@ class DashboardController extends Controller
 		{
 			$this->redirect(array("site/index"));
 		}
+		else if(Yii::app()->user->level!="admin_bidang")
+		{
+			$this->redirect(array("site/index"));
+		}
 	}
 	public $layout='//layouts/main_bidang';
 

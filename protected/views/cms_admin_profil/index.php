@@ -1,4 +1,4 @@
-<h2>Dashboard Profil</h2>
+<h2>Admin Profil</h2>
 
 <div class="form">
 
