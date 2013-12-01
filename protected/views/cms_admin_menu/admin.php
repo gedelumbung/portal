@@ -49,8 +49,7 @@ $('.search-form form').submit(function(){
 		'menu',
 		array(
 			'header'=>'Sub Menu',
-			'name'=>'Menu.menu',
-			'value'=>$data->Menu->menu),
+			'name'=>'Menu.menu',),
 		'url_route',
 		'posisi',
 		array(

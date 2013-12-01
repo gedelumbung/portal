@@ -3,16 +3,10 @@
 
 <table>
 	<tr>
-		<td><h3><a href="<?php echo Yii::app()->baseUrl; ?>/pemenang_pengadaan/<?php echo $data->id_pemenang_pengadaan; ?>"><?php echo CHtml::encode($data->judul); ?></a></h3></td>
+		<td><h3><a href="<?php echo Yii::app()->baseUrl; ?>/pemenang_pengadaan/<?php echo $data->id_pemenang_pengadaan; ?>"><?php echo CHtml::encode($data->Pengadaan->nama_lelang); ?></a></h3></td>
 	</tr>
 	<tr>
-		<td>Posted on : <?php echo CHtml::encode($data->tanggal); ?></td>
-	</tr>
-	<tr>
-		<td>By : <?php echo CHtml::encode($data->UserBidang->nama); ?></td>
-	</tr>
-	<tr>
-		<td>Bidang : <?php echo CHtml::encode($data->Bidang->nama_bidang); ?></td>
+		<td>Posted on : <?php echo CHtml::encode($data->tgl_pengumuman); ?></td>
 	</tr>
 </table>
 

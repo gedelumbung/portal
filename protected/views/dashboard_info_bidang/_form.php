@@ -22,27 +22,12 @@
 	</div>
 
 	<div class="row">
-		<?php $this->widget('ext.redactorjs.ERedactorWidget',array(
-		    'model'=>$model,
-		    'attribute'=>"isi",
-		    'options'=>array(
-		        'fileUpload'=>Yii::app()->createUrl('post/fileUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'fileUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		        'imageUpload'=>Yii::app()->createUrl('post/imageUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageGetJson'=>Yii::app()->createUrl('post/imageList',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		    ),
-		)); ?>
+		<?php
+		$this->widget('ext.editMe.widgets.ExtEditMe', array(
+		    'name'=>'InfoBidang[isi]',
+		    'value'=>$model->isi,
+		));
+		?>
 		<?php echo $form->error($model,'isi'); ?>
 	</div>
 

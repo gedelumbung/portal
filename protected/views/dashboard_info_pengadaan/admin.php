@@ -38,19 +38,19 @@ $('.search-form form').submit(function(){
 <?php $this->widget('zii.widgets.grid.CGridView', array(
 	'id'=>'info-pengadaan-grid',
 	'dataProvider'=>$model->search(),
-	'filter'=>$model,
     'pager' => array('cssFile' => Yii::app()->theme->baseUrl.'/css/gridViewAdmin.css'),
+	'filter'=>$model,
 	'columns'=>array(
-	     array(
-	      'header'=>'No',
-	      'type'=>'raw',
-	      'value'=>'$this->grid->dataProvider->pagination->currentPage*$this->grid->dataProvider->pagination->pageSize + $row+1'
-	      ),
-		'judul',
-		'tanggal',
-		'Bidang.nama_bidang',
-		'status_pengadaan',
+		'kode_lelang',
+		'tgl_pengumuman',
+		'nama_lelang',
+		'kategori',
+		'anggaran',
+		'stts',
 		/*
+		'nilai_hps',
+		'kualifikasi_usaha',
+		'Informasi_tambahan',
 		'stts',
 		*/
 		array(

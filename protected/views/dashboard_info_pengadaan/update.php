@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Info Pengadaan <?php echo $model->id_pengadaan; ?></h1>
+<h1>Update InfoPengadaan <?php echo $model->kode_lelang; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

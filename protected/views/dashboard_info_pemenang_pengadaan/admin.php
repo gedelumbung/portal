@@ -41,16 +41,19 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
     'pager' => array('cssFile' => Yii::app()->theme->baseUrl.'/css/gridViewAdmin.css'),
 	'columns'=>array(
-	     array(
-	      'header'=>'No',
-	      'type'=>'raw',
-	      'value'=>'$this->grid->dataProvider->pagination->currentPage*$this->grid->dataProvider->pagination->pageSize + $row+1'
-	      ),
-		'judul',
-		'tanggal',
-		'Bidang.nama_bidang',
+		'no_reff',
+		'tgl_pengumuman',
+		'kode_lelang',
+		'nama_pemenang_1',
+		'nilai_penawaran_1',
 		/*
-		'stts',
+		'npwp_1',
+		'nama_pemenang_2',
+		'nilai_penawaran_2',
+		'npwp_2',
+		'nama_pemenang_3',
+		'nilai_penawaran_3',
+		'npwp_3',
 		*/
 		array(
 			'class'=>'CButtonColumn',

@@ -16,33 +16,71 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->textField($model,'judul',array('size'=>90,'maxlength'=>150,'placeholder'=>"Ketikkan judul",'class'=>'span8')); ?>
-		<?php echo $form->error($model,'judul'); ?>
+		<?php echo $form->labelEx($model,'no_reff'); ?>
+		<?php echo $form->textField($model,'no_reff',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'no_reff'); ?>
 	</div>
-	<br>
+
 	<div class="row">
-		<?php $this->widget('ext.redactorjs.ERedactorWidget',array(
-		    'model'=>$model,
-		    'attribute'=>"isi",
-		    'options'=>array(
-		        'fileUpload'=>Yii::app()->createUrl('post/fileUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'fileUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		        'imageUpload'=>Yii::app()->createUrl('post/imageUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageGetJson'=>Yii::app()->createUrl('post/imageList',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		    ),
-		)); ?>
-		<?php echo $form->error($model,'isi'); ?>
+		<?php echo $form->labelEx($model,'kode_lelang'); ?>
+		<?php echo CHtml::dropDownList(
+			'PemenangPengadaan[kode_lelang]',$model->kode_lelang,array(''=>'Pilih') + CHtml::listData(InfoPengadaan::model()->findAll(),'id_pengadaan','kode_lelang')
+		); ?>
+		<?php echo $form->error($model,'kode_lelang'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nama_pemenang_1'); ?>
+		<?php echo $form->textField($model,'nama_pemenang_1',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'nama_pemenang_1'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nilai_penawaran_1'); ?>
+		<?php echo $form->textField($model,'nilai_penawaran_1',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'nilai_penawaran_1'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'npwp_1'); ?>
+		<?php echo $form->textField($model,'npwp_1',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'npwp_1'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nama_pemenang_2'); ?>
+		<?php echo $form->textField($model,'nama_pemenang_2',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'nama_pemenang_2'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nilai_penawaran_2'); ?>
+		<?php echo $form->textField($model,'nilai_penawaran_2',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'nilai_penawaran_2'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'npwp_2'); ?>
+		<?php echo $form->textField($model,'npwp_2',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'npwp_2'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nama_pemenang_3'); ?>
+		<?php echo $form->textField($model,'nama_pemenang_3',array('size'=>60,'maxlength'=>100)); ?>
+		<?php echo $form->error($model,'nama_pemenang_3'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nilai_penawaran_3'); ?>
+		<?php echo $form->textField($model,'nilai_penawaran_3',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'nilai_penawaran_3'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'npwp_3'); ?>
+		<?php echo $form->textField($model,'npwp_3',array('size'=>30,'maxlength'=>30)); ?>
+		<?php echo $form->error($model,'npwp_3'); ?>
 	</div>
 
 	<div class="row buttons">

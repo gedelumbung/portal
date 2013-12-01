@@ -71,6 +71,18 @@ class LoginForm extends CFormModel
 				if(!$this->_identity->authenticate())
 					$this->addError('password','Incorrect username or password. Maybe your account have not moderate');
 			}
+			else if($this->hak_akses=="kepala_dinas")
+			{
+				$this->_identity=new UserAuthKepalaDinas($this->username,$this->password);
+				if(!$this->_identity->authenticate())
+					$this->addError('password','Incorrect username or password. Maybe your account have not moderate');
+			}
+			else if($this->hak_akses=="keuangan")
+			{
+				$this->_identity=new UserAuthKeuangan($this->username,$this->password);
+				if(!$this->_identity->authenticate())
+					$this->addError('password','Incorrect username or password. Maybe your account have not moderate');
+			}
 		}
 	}
 
@@ -95,6 +107,11 @@ class LoginForm extends CFormModel
 			else if($this->hak_akses=="perusahaan")
 			{
 				$this->_identity=new UserAuthPerusahaan($this->username,$this->password);
+				$this->_identity->authenticate();
+			}
+			else if($this->hak_akses=="kepala_dinas")
+			{
+				$this->_identity=new UserAuthKepalaDinas($this->username,$this->password);
 				$this->_identity->authenticate();
 			}
 		}

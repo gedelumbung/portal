@@ -5,7 +5,7 @@ class InfoPengadaanWidget extends CWidget {
     public function run() {
 
         $criteria = new CDbCriteria;
-        $criteria->order = 'id_pengadaan DESC';
+        $criteria->order = 'kode_lelang DESC';
         $criteria->limit = 5;
         $criteria->offset = 0;
 

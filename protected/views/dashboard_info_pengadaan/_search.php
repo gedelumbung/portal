@@ -12,8 +12,13 @@
 )); ?>
 
 	<div class="row">
-		<?php echo $form->label($model,'judul'); ?>
-		<?php echo $form->textField($model,'judul',array('size'=>60,'maxlength'=>150,'class'=>'span8')); ?>
+		<?php echo $form->label($model,'kode_lelang'); ?>
+		<?php echo $form->textField($model,'kode_lelang',array('size'=>30,'maxlength'=>30)); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->label($model,'nama_lelang'); ?>
+		<?php echo $form->textField($model,'nama_lelang',array('size'=>60,'maxlength'=>100)); ?>
 	</div>
 
 	<div class="row buttons">

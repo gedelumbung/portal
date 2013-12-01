@@ -22,13 +22,17 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_pemenang_pengadaan',
-		'judul',
-		array(
-			'type'=>'raw',
-			'name'=>'isi'
-			),
-		'tanggal',
-		'UserBidang.nama',
-		'Bidang.nama_bidang',
+		'no_reff',
+		'tgl_pengumuman',
+		'kode_lelang',
+		'nama_pemenang_1',
+		'nilai_penawaran_1',
+		'npwp_1',
+		'nama_pemenang_2',
+		'nilai_penawaran_2',
+		'npwp_2',
+		'nama_pemenang_3',
+		'nilai_penawaran_3',
+		'npwp_3',
 	),
 )); ?>

@@ -8,10 +8,6 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 		{
 			$this->redirect(array("site/index"));
 		}
-		else if(Yii::app()->user->pengadaan==0)
-		{
-			$this->redirect(array("site/index"));
-		}
 		else if(Yii::app()->user->level!="admin_bidang")
 		{
 			$this->redirect(array("site/index"));
@@ -70,6 +66,7 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 	public function actionCreate()
 	{
 		$model=new PemenangPengadaan;
+		$model_pengadaan=new InfoPengadaan;
 
 		// Uncomment the following line if AJAX validation is needed
 		// $this->performAjaxValidation($model);
@@ -77,11 +74,10 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 		if(isset($_POST['PemenangPengadaan']))
 		{
 			$model->attributes=$_POST['PemenangPengadaan'];
-			$model->tanggal = gmdate("d-M-Y H:i:s",time()+3600*7);
-			$model->id_user = Yii::app()->user->id;
-			$model->id_bidang = Yii::app()->user->id_bidang;
-			$model->stts = 0;
+			$model->tgl_pengumuman = gmdate("d-M-Y H:i:s",time()+3600*7);
 			if($model->save())
+				$model_pengadaan->stts = "Selesai";
+				if($model_pengadaan->save())
 				$this->redirect(array('view','id'=>$model->id_pemenang_pengadaan));
 		}
 
@@ -106,6 +102,9 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 		{
 			$model->attributes=$_POST['PemenangPengadaan'];
 			if($model->save())
+				$model_pengadaan=$this->loadModelPengadaan($model->kode_lelang);
+				$model_pengadaan->stts = "Selesai";
+				if($model_pengadaan->save())
 				$this->redirect(array('view','id'=>$model->id_pemenang_pengadaan));
 		}
 
@@ -168,6 +167,14 @@ class Dashboard_info_pemenang_pengadaanController extends Controller
 	public function loadModel($id)
 	{
 		$model=PemenangPengadaan::model()->findByPk($id);
+		if($model===null)
+			throw new CHttpException(404,'The requested page does not exist.');
+		return $model;
+	}
+
+	public function loadModelPengadaan($id)
+	{
+		$model=InfoPengadaan::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;

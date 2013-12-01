@@ -16,6 +16,7 @@
 	<link href="<?php echo $baseUrl; ?>/css/style-boot.css" rel="stylesheet" />
 	<link href="<?php echo $baseUrl; ?>/css/style_responsive.css" rel="stylesheet" />
 	<link href="<?php echo $baseUrl; ?>/css/style_default.css" rel="stylesheet" id="style_color" />
+	<script src="<?php echo Yii::app()->baseUrl; ?>/ckeditor/ckeditor.js"></script>
 
 </head>
 <!-- END HEAD -->

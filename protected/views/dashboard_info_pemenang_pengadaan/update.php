@@ -16,6 +16,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Update Pemenang Pengadaan <?php echo $model->id_pemenang_pengadaan; ?></h1>
+<h1>Update PemenangPengadaan <?php echo $model->id_pemenang_pengadaan; ?></h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

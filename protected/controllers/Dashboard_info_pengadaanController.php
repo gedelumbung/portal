@@ -8,10 +8,6 @@ class Dashboard_info_pengadaanController extends Controller
 		{
 			$this->redirect(array("site/index"));
 		}
-		else if(Yii::app()->user->pengadaan==0)
-		{
-			$this->redirect(array("site/index"));
-		}
 		else if(Yii::app()->user->level!="admin_bidang")
 		{
 			$this->redirect(array("site/index"));
@@ -77,10 +73,8 @@ class Dashboard_info_pengadaanController extends Controller
 		if(isset($_POST['InfoPengadaan']))
 		{
 			$model->attributes=$_POST['InfoPengadaan'];
-			$model->tanggal = gmdate("d-M-Y H:i:s",time()+3600*7);
-			$model->id_user = Yii::app()->user->id;
-			$model->id_bidang = Yii::app()->user->id_bidang;
-			$model->stts = 0;
+			$model->tgl_pengumuman = gmdate("d-M-Y H:i:s",time()+3600*7);
+			$model->stts = "Proses";
 			if($model->save())
 				$this->redirect(array('view','id'=>$model->id_pengadaan));
 		}
@@ -129,7 +123,7 @@ class Dashboard_info_pengadaanController extends Controller
 	}
 
 	/**
-	 * Manages all models.
+	 * Lists all models.
 	 */
 	public function actionIndex()
 	{

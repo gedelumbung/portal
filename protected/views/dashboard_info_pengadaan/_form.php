@@ -16,38 +16,55 @@
 	<?php echo $form->errorSummary($model); ?>
 
 	<div class="row">
-		<?php echo $form->textField($model,'judul',array('size'=>90,'maxlength'=>150,'placeholder'=>"Ketikkan judul",'class'=>'span8')); ?>
-		<?php echo $form->error($model,'judul'); ?>
-	</div>
-	<br>
-	<div class="row">
-		<?php $this->widget('ext.redactorjs.ERedactorWidget',array(
-		    'model'=>$model,
-		    'attribute'=>"isi",
-		    'options'=>array(
-		        'fileUpload'=>Yii::app()->createUrl('post/fileUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'fileUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		        'imageUpload'=>Yii::app()->createUrl('post/imageUpload',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageGetJson'=>Yii::app()->createUrl('post/imageList',array(
-		            'attr'=>"isi"
-		        )),
-		        'imageUploadErrorCallback'=>new CJavaScriptExpression(
-		            'function(obj,json) { alert(json.error); }'
-		        ),
-		    ),
-		)); ?>
-		<?php echo $form->error($model,'isi'); ?>
+		<?php echo $form->labelEx($model,'kode_lelang'); ?>
+		<?php echo $form->textField($model,'kode_lelang',array('size'=>30,'maxlength'=>30, "class"=>"span12")); ?>
+		<?php echo $form->error($model,'kode_lelang'); ?>
 	</div>
 
 	<div class="row">
-		<?php echo $form->textField($model,'status_pengadaan',array('size'=>90,'maxlength'=>30,'placeholder'=>"Status Pengadaan",'class'=>'span8')); ?>
-		<?php echo $form->error($model,'status_pengadaan'); ?>
+		<?php echo $form->labelEx($model,'nama_lelang'); ?>
+		<?php echo $form->textField($model,'nama_lelang',array('size'=>60,'maxlength'=>100, "class"=>"span12")); ?>
+		<?php echo $form->error($model,'nama_lelang'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'kategori'); ?>
+		<?php echo $form->textField($model,'kategori',array('size'=>60,'maxlength'=>100, "class"=>"span12")); ?>
+		<?php echo $form->error($model,'kategori'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'anggaran'); ?>
+		<?php echo $form->textField($model,'anggaran',array('size'=>50,'maxlength'=>50, "class"=>"span12")); ?>
+		<?php echo $form->error($model,'anggaran'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nilai_pagu'); ?>
+		<?php echo $form->textField($model,'nilai_pagu', array("class"=>"span12")); ?>
+		<?php echo $form->error($model,'nilai_pagu'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'nilai_hps'); ?>
+		<?php echo $form->textField($model,'nilai_hps', array("class"=>"span12")); ?>
+		<?php echo $form->error($model,'nilai_hps'); ?>
+	</div>
+
+	<div class="row">
+		<?php echo $form->labelEx($model,'kualifikasi_usaha'); ?>
+		<?php echo $form->textField($model,'kualifikasi_usaha',array('size'=>60,'maxlength'=>100, "class"=>"span12")); ?>
+		<?php echo $form->error($model,'kualifikasi_usaha'); ?>
+	</div>
+
+	<div class="row">
+		<?php
+		$this->widget('ext.editMe.widgets.ExtEditMe', array(
+		    'name'=>'InfoPengadaan[Informasi_tambahan]',
+		    'value'=>$model->Informasi_tambahan,
+		));
+		?>
+		<?php echo $form->error($model,'isi'); ?>
 	</div>
 
 	<div class="row buttons">

@@ -13,6 +13,6 @@ $this->menu=array(
 );
 ?>
 
-<h1>Create Pemenang Pengadaan</h1>
+<h1>Create PemenangPengadaan</h1>
 
 <?php echo $this->renderPartial('_form', array('model'=>$model)); ?>

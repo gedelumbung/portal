@@ -45,7 +45,7 @@ $this->breadcrumbs=array(
     <div class="control-group">
       <?php echo $form->labelEx($model,'hak_akses', array("class" => "control-label")); ?>
       <div class="controls">
-        <?php echo $form->dropDownList($model,'hak_akses',array("admin_bidang"=>"Admin Bidang","web_admin"=>"Web Admin","perusahaan"=>"Perusahaan"),array('empty'=>'-- Pilih Hak Akses --')); ?>
+        <?php echo $form->dropDownList($model,'hak_akses',array("admin_bidang"=>"Admin Bidang","web_admin"=>"Web Admin","perusahaan"=>"Perusahaan","kepala_dinas"=>"Kepala Dinas","keuangan"=>"Keuangan"),array('empty'=>'-- Pilih Hak Akses --')); ?>
       </div>
     </div>
 
