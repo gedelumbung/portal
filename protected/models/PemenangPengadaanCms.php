@@ -40,14 +40,12 @@ class PemenangPengadaanCms extends CActiveRecord
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('judul, isi, tanggal, id_user, id_bidang, stts', 'required'),
-			array('id_user, id_bidang', 'numerical', 'integerOnly'=>true),
-			array('judul', 'length', 'max'=>150),
-			array('tanggal', 'length', 'max'=>30),
-			array('stts', 'length', 'max'=>1),
+			array('no_reff, kode_lelang, nama_pemenang_1, nilai_penawaran_1, npwp_1, nama_pemenang_2, nilai_penawaran_2, npwp_2, nama_pemenang_3, nilai_penawaran_3, npwp_3', 'required'),
+			array('no_reff, tgl_pengumuman, kode_lelang, nilai_penawaran_1, npwp_1, nilai_penawaran_2, npwp_2, nilai_penawaran_3, npwp_3', 'length', 'max'=>30),
+			array('nama_pemenang_1, nama_pemenang_2, nama_pemenang_3', 'length', 'max'=>100),
 			// The following rule is used by search().
 			// Please remove those attributes that should not be searched.
-			array('id_pemenang_pengadaan, judul, isi, tanggal, id_user, id_bidang, stts', 'safe', 'on'=>'search'),
+			array('id_pemenang_pengadaan, no_reff, tgl_pengumuman, kode_lelang, nama_pemenang_1, nilai_penawaran_1, npwp_1, nama_pemenang_2, nilai_penawaran_2, npwp_2, nama_pemenang_3, nilai_penawaran_3, npwp_3', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -57,8 +55,7 @@ class PemenangPengadaanCms extends CActiveRecord
 	public function relations()
 	{
 		return array(
-			'Bidang'=>array(self::BELONGS_TO,'Bidang','id_bidang'),
-			'UserBidang'=>array(self::BELONGS_TO,'UserBidang','id_user'),
+			'Pengadaan'=>array(self::BELONGS_TO,'InfoPengadaan','kode_lelang'),
 			);
 	}
 
@@ -69,12 +66,18 @@ class PemenangPengadaanCms extends CActiveRecord
 	{
 		return array(
 			'id_pemenang_pengadaan' => 'Id Pemenang Pengadaan',
-			'judul' => 'Judul',
-			'isi' => 'Isi',
-			'tanggal' => 'Tanggal',
-			'id_user' => 'Id User',
-			'id_bidang' => 'Id Bidang',
-			'stts' => 'Stts',
+			'no_reff' => 'No Reff',
+			'tgl_pengumuman' => 'Tgl Pengumuman',
+			'kode_lelang' => 'Kode Lelang',
+			'nama_pemenang_1' => 'Nama Pemenang 1',
+			'nilai_penawaran_1' => 'Nilai Penawaran 1',
+			'npwp_1' => 'Npwp 1',
+			'nama_pemenang_2' => 'Nama Pemenang 2',
+			'nilai_penawaran_2' => 'Nilai Penawaran 2',
+			'npwp_2' => 'Npwp 2',
+			'nama_pemenang_3' => 'Nama Pemenang 3',
+			'nilai_penawaran_3' => 'Nilai Penawaran 3',
+			'npwp_3' => 'Npwp 3',
 		);
 	}
 
@@ -90,12 +93,18 @@ class PemenangPengadaanCms extends CActiveRecord
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id_pemenang_pengadaan',$this->id_pemenang_pengadaan);
-		$criteria->compare('judul',$this->judul,true);
-		$criteria->compare('isi',$this->isi,true);
-		$criteria->compare('tanggal',$this->tanggal,true);
-		$criteria->compare('id_user',$this->id_user);
-		$criteria->compare('id_bidang',$this->id_bidang);
-		$criteria->compare('stts',$this->stts,true);
+		$criteria->compare('no_reff',$this->no_reff,true);
+		$criteria->compare('tgl_pengumuman',$this->tgl_pengumuman,true);
+		$criteria->compare('kode_lelang',$this->kode_lelang,true);
+		$criteria->compare('nama_pemenang_1',$this->nama_pemenang_1,true);
+		$criteria->compare('nilai_penawaran_1',$this->nilai_penawaran_1,true);
+		$criteria->compare('npwp_1',$this->npwp_1,true);
+		$criteria->compare('nama_pemenang_2',$this->nama_pemenang_2,true);
+		$criteria->compare('nilai_penawaran_2',$this->nilai_penawaran_2,true);
+		$criteria->compare('npwp_2',$this->npwp_2,true);
+		$criteria->compare('nama_pemenang_3',$this->nama_pemenang_3,true);
+		$criteria->compare('nilai_penawaran_3',$this->nilai_penawaran_3,true);
+		$criteria->compare('npwp_3',$this->npwp_3,true);
 
 		return new CActiveDataProvider($this, array(
 			'criteria'=>$criteria,

@@ -8,7 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List PemenangPengadaanCms', 'url'=>array('index')),
+	array('label'=>'List Pemenang Pengadaan', 'url'=>array('index')),
 );
 
 Yii::app()->clientScript->registerScript('search', "
@@ -40,15 +40,11 @@ $('.search-form form').submit(function(){
 	'filter'=>$model,
     'pager' => array('cssFile' => Yii::app()->theme->baseUrl.'/css/gridViewAdmin.css'),
 	'columns'=>array(
-	     array(
-	      'header'=>'No',
-	      'type'=>'raw',
-	      'value'=>'$this->grid->dataProvider->pagination->currentPage*$this->grid->dataProvider->pagination->pageSize + $row+1'
-	      ),
-		'judul',
-		'tanggal',
-		'UserBidang.nama',
-		'Bidang.nama_bidang',
+		'no_reff',
+		'tgl_pengumuman',
+		'kode_lelang',
+		'nama_pemenang_1',
+		'nilai_penawaran_1',
 		/*
 		'stts',
 		*/

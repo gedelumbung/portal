@@ -8471,3 +8471,435 @@ Stack trace:
 REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
 HTTP_REFERER=http://localhost/portal-dinas-perhubungan/kepala_dinas_info_pad/index
 ---
+2013/12/05 04:35:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/images/line-menu.gif".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/images/line-menu.gif
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/
+---
+2013/12/05 04:35:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/images/line-menu.gif".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/images/line-menu.gif
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/site/login
+---
+2013/12/05 04:35:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:35:51 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_search.php(16): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/admin.php(34): CController->renderPartial('_search', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(113): CController->render('admin', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(49): Cms_admin_info_pemenang_pengadaanController->actionIndex()
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('')
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:37:18 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_search.php(16): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/admin.php(34): CController->renderPartial('_search', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(113): CController->render('admin', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(49): Cms_admin_info_pemenang_pengadaanController->actionIndex()
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('')
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:37:19 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_search.php(16): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/admin.php(34): CController->renderPartial('_search', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(113): CController->render('admin', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(49): Cms_admin_info_pemenang_pengadaanController->actionIndex()
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('')
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:37:42 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_search.php(16): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/admin.php(34): CController->renderPartial('_search', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(113): CController->render('admin', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(49): Cms_admin_info_pemenang_pengadaanController->actionIndex()
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('')
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:38:46 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_search.php(16): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/admin.php(34): CController->renderPartial('_search', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('admin', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(113): CController->render('admin', Array)
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(49): Cms_admin_info_pemenang_pengadaanController->actionIndex()
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('')
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#28 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin
+---
+2013/12/05 04:39:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+---
+2013/12/05 04:39:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan
+---
+2013/12/05 04:39:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:39:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:39:21 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.judul" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('judul')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(2255): CActiveRecord->__get('judul')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1980): CHtml::resolveValue(Object(PemenangPengadaanCms), 'judul')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/helpers/CHtml.php(1257): CHtml::activeInputField('text', Object(PemenangPengadaanCms), 'judul', Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/widgets/CActiveForm.php(657): CHtml::activeTextField(Object(PemenangPengadaanCms), 'judul', Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/_form.php(20): CActiveForm->textField(Object(PemenangPengadaanCms), 'judul', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#7 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/update.php(20): CController->renderPartial('_form', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('update', Array, true)
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(84): CController->render('update', Array)
+#15 [internal function]: Cms_admin_info_pemenang_pengadaanController->actionUpdate('1')
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(Cms_admin_info_pemenang_pengadaanController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(Cms_admin_info_pemenang_pengadaanController), Object(ReflectionMethod), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#22 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#23 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#24 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#25 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#26 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('update')
+#27 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#28 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#29 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#30 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/update/1
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:39:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:55:50 [error] [exception.CException] exception 'CException' with message 'Property "PemenangPengadaanCms.isi" is not defined.' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CComponent.php:130
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/db/ar/CActiveRecord.php(143): CComponent->__get('isi')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/views/cms_admin_info_pemenang_pengadaan/view.php(28): CActiveRecord->__get('isi')
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(126): require('/Applications/X...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CBaseController.php(95): CBaseController->renderInternal('/Applications/X...', Array, true)
+#4 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(869): CBaseController->renderFile('/Applications/X...', Array, true)
+#5 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(782): CController->renderPartial('view', Array, true)
+#6 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/protected/controllers/Cms_admin_info_pemenang_pengadaanController.php(60): CController->render('view', Array)
+#7 [internal function]: Cms_admin_info_pemenang_pengadaanController->actionView('1')
+#8 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CAction.php(108): ReflectionMethod->invokeArgs(Object(Cms_admin_info_pemenang_pengadaanController), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/actions/CInlineAction.php(47): CAction->runWithParamsInternal(Object(Cms_admin_info_pemenang_pengadaanController), Object(ReflectionMethod), Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(308): CInlineAction->runWithParams(Array)
+#11 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#12 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilter.php(40): CFilterChain->run()
+#13 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(1145): CFilter->filter(Object(CFilterChain))
+#14 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/filters/CFilterChain.php(130): CInlineFilter->filter(Object(CFilterChain))
+#16 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(291): CFilterChain->run()
+#17 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(282): CController->run('view')
+#19 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('cms_admin_info_...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#21 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/1
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:56:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/1
+---
+2013/12/05 04:57:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/1
+---
+2013/12/05 04:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:08 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:57:25 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/update/1
+---
+2013/12/05 04:58:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/1
+---
+2013/12/05 04:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/css/gridViewAdmin.css".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/c...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/css/gridViewAdmin.css
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---
+2013/12/05 04:58:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/purple/img/remove-icon-small.png".' in /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php:286
+Stack trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/web/CWebApplication.php(141): CWebApplication->runController('themes/purple/i...')
+#1 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/yii/framework/base/CApplication.php(169): CWebApplication->processRequest()
+#2 /Applications/XAMPP/xamppfiles/htdocs/portal-dinas-perhubungan/index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/portal-dinas-perhubungan/themes/purple/img/remove-icon-small.png
+HTTP_REFERER=http://localhost/portal-dinas-perhubungan/cms_admin_info_pemenang_pengadaan/index
+---

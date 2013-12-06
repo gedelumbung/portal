@@ -8,10 +8,7 @@ $this->breadcrumbs=array(
 );
 
 $this->menu=array(
-	array('label'=>'List PemenangPengadaanCms', 'url'=>array('index')),
-	array('label'=>'Update PemenangPengadaanCms', 'url'=>array('update', 'id'=>$model->id_pemenang_pengadaan)),
-	array('label'=>'Delete PemenangPengadaanCms', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id_pemenang_pengadaan),'confirm'=>'Are you sure you want to delete this item?')),
-	array('label'=>'Manage PemenangPengadaanCms', 'url'=>array('admin')),
+	array('label'=>'List Pemenang Pengadaan', 'url'=>array('index')),
 );
 ?>
 
@@ -21,13 +18,17 @@ $this->menu=array(
 	'data'=>$model,
 	'attributes'=>array(
 		'id_pemenang_pengadaan',
-		'judul',
-		array(
-			"type"=>"raw",
-			"name"=>"isi",
-			"data"=>$model->isi),
-		'tanggal',
-		'UserBidang.nama',
-		'Bidang.nama_bidang',
+		'no_reff',
+		'tgl_pengumuman',
+		'kode_lelang',
+		'nama_pemenang_1',
+		'nilai_penawaran_1',
+		'npwp_1',
+		'nama_pemenang_2',
+		'nilai_penawaran_2',
+		'npwp_2',
+		'nama_pemenang_3',
+		'nilai_penawaran_3',
+		'npwp_3',
 	),
 )); ?>
